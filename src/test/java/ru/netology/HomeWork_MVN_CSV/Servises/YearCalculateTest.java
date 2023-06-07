@@ -1,18 +1,15 @@
 package ru.netology.HomeWork_MVN_CSV.Servises;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import org.junit.jupiter.params.provider.CsvSource;
 //import ru.netology.HomeWork_MVN_CSV.Servises.yearcalcullate;
 
-public class yearcalculateTest {
+public class YearCalculateTest {
 
     @ParameterizedTest
     @CsvFileSource(files = "src/test/resources/count.csv")
-    public void shouldCalculatefirst(int income, int expenses, int threshold) {
-        yearcalcullate service = new yearcalcullate();
+    public void shouldCalculateFirst(int income, int expenses, int threshold) {
+        YearCalcullate service = new YearCalcullate();
 
         int year = service.calculate(income, expenses, threshold);
 
@@ -20,8 +17,8 @@ public class yearcalculateTest {
     }
 
     // @Test
-    //  public void shouldCalculatefirst() {
-    //  yearcalcullate service = new yearcalcullate();
+    //  public void shouldCalculateFirst() {
+    //YearCalcullate service = new YearCalcullate();
     // int income = 10000;
     // int expenses = 3000;
     // int threshold = 20000;
@@ -31,8 +28,8 @@ public class yearcalculateTest {
     // }
 
     //@Test
-    //public void shouldCalculatesecond() {
-    //  yearcalcullate service = new yearcalcullate();
+    //public void shouldCalculateSecond() {
+    //  YearCalcullate service = new YearCalcullate();
     //int income = 100000;
     //int expenses = 60000;
     // int threshold = 150000;

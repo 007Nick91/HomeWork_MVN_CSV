@@ -1,6 +1,6 @@
 package ru.netology.HomeWork_MVN_CSV.Servises;
 
-public class yearcalcullate {
+public class YearCalcullate {
     public int calculate(int income, int expenses, int threshold) {
         int rest = expenses * 3;
         int count = 0;

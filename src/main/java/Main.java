@@ -1,8 +1,8 @@
-import ru.netology.HomeWork_MVN_CSV.Servises.yearcalcullate;
+import ru.netology.HomeWork_MVN_CSV.Servises.YearCalcullate;
 
 public class Main {
     public static void main(String[] args) {
-        yearcalcullate service = new yearcalcullate();
+        YearCalcullate service = new YearCalcullate();
         int income = 100000;
         int expenses = 60000;
         int threshold = 150000;
